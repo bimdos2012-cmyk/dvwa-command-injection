@@ -11,7 +11,7 @@ Exploit command injection vulnerability to execute system commands.
 - DVWA
 - Web Browser
 
-## Steps
+##  Exploitation Steps
 1. Set DVWA security level to LOW
 2. Navigated to Command Injection module
 3. Injected payload:
@@ -20,12 +20,13 @@ Exploit command injection vulnerability to execute system commands.
 ```
 
 ## Result
-Successfully executed system commands on the server.
+Successfully executed system-level commands via command injection. Verified by retrieving the server user (www-data) and system information.
 
 ## Impact
 - Allows remote command execution
 - Can expose sensitive system data
 - May lead to full system compromise
+- Allows attackers to execute arbitrary commands on host system
 
 ## Proof of Exploitation
 
